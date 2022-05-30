@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Александр\\source\\repos\\WBST\\WebApplication1\\Web.csproj": {}
+    "C:\\Users\\Александр\\Desktop\\Repository\\WebApplication1\\Web.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Александр\\source\\repos\\WBST\\WebApplication1\\Web.csproj": {
+    "C:\\Users\\Александр\\Desktop\\Repository\\WebApplication1\\Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Александр\\source\\repos\\WBST\\WebApplication1\\Web.csproj",
+        "projectUniqueName": "C:\\Users\\Александр\\Desktop\\Repository\\WebApplication1\\Web.csproj",
         "projectName": "Web",
-        "projectPath": "C:\\Users\\Александр\\source\\repos\\WBST\\WebApplication1\\Web.csproj",
+        "projectPath": "C:\\Users\\Александр\\Desktop\\Repository\\WebApplication1\\Web.csproj",
         "packagesPath": "C:\\Users\\Александр\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Александр\\source\\repos\\WBST\\WebApplication1\\obj\\",
+        "outputPath": "C:\\Users\\Александр\\Desktop\\Repository\\WebApplication1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Александр\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -47,6 +47,10 @@
             "Microsoft.AspNetCore.Razor.Runtime": {
               "target": "Package",
               "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.5, )"
             }
           },
           "imports": [

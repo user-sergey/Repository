@@ -10,5 +10,8 @@ namespace Web.Models
         public string Name { get; set; }
         public int DisplayOrder { get; set; }
         public DateTime CreatedDateTime { get; } = DateTime.Now;
+        public string News { get; set; }
+        public string Source { get; set; }
+        public string Country { get; set; }
     }
 }

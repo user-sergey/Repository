@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Александр\\Desktop\\Repository\\WebApplication1\\Web.csproj": {}
+    "C:\\Users\\fslsv\\Desktop\\Repository\\WebApplication1\\Web.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Александр\\Desktop\\Repository\\WebApplication1\\Web.csproj": {
+    "C:\\Users\\fslsv\\Desktop\\Repository\\WebApplication1\\Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Александр\\Desktop\\Repository\\WebApplication1\\Web.csproj",
+        "projectUniqueName": "C:\\Users\\fslsv\\Desktop\\Repository\\WebApplication1\\Web.csproj",
         "projectName": "Web",
-        "projectPath": "C:\\Users\\Александр\\Desktop\\Repository\\WebApplication1\\Web.csproj",
-        "packagesPath": "C:\\Users\\Александр\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Александр\\Desktop\\Repository\\WebApplication1\\obj\\",
+        "projectPath": "C:\\Users\\fslsv\\Desktop\\Repository\\WebApplication1\\Web.csproj",
+        "packagesPath": "C:\\Users\\fslsv\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\fslsv\\Desktop\\Repository\\WebApplication1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Александр\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\fslsv\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

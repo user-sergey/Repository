@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Web.Storage.Models;
+using Web.Storage.Entitiess;
 
 namespace Web.Storage.Data
 {
@@ -15,6 +15,7 @@ namespace Web.Storage.Data
         public DbSet<Country> Countries { get; set; }
         public DbSet<News> News { get; set; }
         public DbSet<Publisher> Publishers { get; set; }
+        public DbSet<PublisherCountry> PublisherCountries { get; set; } 
         public DbSet<Source> Sources { get; set; }
         public DbSet<User> Users { get; set; }
 

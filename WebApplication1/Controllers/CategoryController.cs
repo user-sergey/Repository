@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Web.Data;
-using Web.Models;
+using Web.Storage.Data;
 
 namespace Web.Controllers
 {
@@ -30,10 +29,6 @@ namespace Web.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Create(Category obj)
         {
-            if (obj.Name == obj.DisplayOrder.ToString())
-            {
-                ModelState.AddModelError("Name", "The DisplayOrder cannot exactly match the Name.");
-            }
             if (ModelState.IsValid)
             {
                 _db.Categories.Add(obj);

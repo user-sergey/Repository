@@ -3152,6 +3152,21 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "Web.Storage/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.5",
+          "Microsoft.EntityFrameworkCore.Relational": "6.0.5",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.5"
+        },
+        "compile": {
+          "bin/placeholder/Web.Storage.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Web.Storage.dll": {}
+        }
       }
     }
   },
@@ -9724,6 +9739,11 @@
         "system.xml.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "Web.Storage/1.0.0": {
+      "type": "project",
+      "path": "../Web.Storage/Web.Storage.csproj",
+      "msbuildProject": "../Web.Storage/Web.Storage.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -9731,9 +9751,11 @@
       "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation >= 6.0.5",
       "Microsoft.AspNetCore.Razor.Runtime >= 2.2.0",
       "Microsoft.EntityFrameworkCore >= 6.0.5",
+      "Microsoft.EntityFrameworkCore.Design >= 6.0.5",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.5",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.5",
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.5"
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.5",
+      "Web.Storage >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -9762,7 +9784,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Александр\\Desktop\\Repository\\Web.Storage\\Web.Storage.csproj": {
+              "projectPath": "C:\\Users\\Александр\\Desktop\\Repository\\Web.Storage\\Web.Storage.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -9784,6 +9810,12 @@
             "version": "[2.2.0, )"
           },
           "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[6.0.5, )"
+          },
+          "Microsoft.EntityFrameworkCore.Design": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
             "target": "Package",
             "version": "[6.0.5, )"
           },

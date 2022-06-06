@@ -1,28 +1,36 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Web.Logic.Categories;
-using Web.Storage.Data;
+using Web.Models;
+using Web.Storage.Entitiess;
 
 namespace Web.Controllers
 {
     public class CategoryController : Controller
     {
-        private ICategoryManager _manager;
+        private readonly ICategoryManager _manager;
 
         public CategoryController(ICategoryManager manager)
         {
             _manager = manager;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index() 
         {
-            var categories = _manager.GetAll;
+            var categories = await _manager.GetAll();
             return View(categories);
         }
-        [HttpPost]
-        public IActionResult DeleteCategory(int categoryId) 
-        {
-            _manager.Delete(categoryId);
-            return RedirectToAction("Index");
-        }
+
+        [HttpGet]
+        [Route("categories")]
+        public Task<IList<Category>> GetAll() => _manager.GetAll();
+
+        [HttpPut]
+        [Route("categories")]
+        public Task Create([FromBody] CreateCategoryRequest request) => _manager.Create(request.Name);
+        // Препод назвал строку 23 "тестовым примером" (11 лекция; 2 видео; 38:20)
+
+        [HttpDelete]
+        [Route("categories/{id}")]
+        public Task Delete(int id) => _manager.Delete(id);
     }
 }

@@ -12,7 +12,7 @@ using Web.Storage.Data;
 namespace Web.Storage.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20220601212441_I")]
+    [Migration("20220601231659_I")]
     partial class I
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -74,17 +74,17 @@ namespace Web.Storage.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("news")
+                    b.Property<int?>("newsId")
                         .HasColumnType("int");
 
-                    b.Property<int?>("user")
+                    b.Property<int?>("userId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("news");
+                    b.HasIndex("newsId");
 
-                    b.HasIndex("user");
+                    b.HasIndex("userId");
 
                     b.ToTable("Commentaries");
                 });
@@ -118,27 +118,27 @@ namespace Web.Storage.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("category")
+                    b.Property<int?>("categoryId")
                         .HasColumnType("int");
 
-                    b.Property<int?>("country")
+                    b.Property<int?>("countryId")
                         .HasColumnType("int");
 
-                    b.Property<int?>("publisher")
+                    b.Property<int?>("publisherId")
                         .HasColumnType("int");
 
-                    b.Property<int?>("source")
+                    b.Property<int?>("sourceId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("category");
+                    b.HasIndex("categoryId");
 
-                    b.HasIndex("country");
+                    b.HasIndex("countryId");
 
-                    b.HasIndex("publisher");
+                    b.HasIndex("publisherId");
 
-                    b.HasIndex("source");
+                    b.HasIndex("sourceId");
 
                     b.ToTable("News");
                 });
@@ -176,17 +176,17 @@ namespace Web.Storage.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<int?>("country")
+                    b.Property<int?>("countryId")
                         .HasColumnType("int");
 
-                    b.Property<int?>("publisher")
+                    b.Property<int?>("publisherId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("country");
+                    b.HasIndex("countryId");
 
-                    b.HasIndex("publisher");
+                    b.HasIndex("publisherId");
 
                     b.ToTable("PublisherCountries");
                 });
@@ -228,12 +228,12 @@ namespace Web.Storage.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("country")
+                    b.Property<int?>("countryId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("country");
+                    b.HasIndex("countryId");
 
                     b.ToTable("Users");
                 });
@@ -242,11 +242,11 @@ namespace Web.Storage.Migrations
                 {
                     b.HasOne("Web.Storage.Entitiess.News", "News")
                         .WithMany()
-                        .HasForeignKey("news");
+                        .HasForeignKey("newsId");
 
                     b.HasOne("Web.Storage.Entitiess.User", "User")
                         .WithMany()
-                        .HasForeignKey("user");
+                        .HasForeignKey("userId");
 
                     b.Navigation("News");
 
@@ -257,19 +257,19 @@ namespace Web.Storage.Migrations
                 {
                     b.HasOne("Web.Storage.Entitiess.Category", "Category")
                         .WithMany()
-                        .HasForeignKey("category");
+                        .HasForeignKey("categoryId");
 
                     b.HasOne("Web.Storage.Entitiess.Country", "Country")
                         .WithMany()
-                        .HasForeignKey("country");
+                        .HasForeignKey("countryId");
 
                     b.HasOne("Web.Storage.Entitiess.Publisher", "Publisher")
                         .WithMany()
-                        .HasForeignKey("publisher");
+                        .HasForeignKey("publisherId");
 
                     b.HasOne("Web.Storage.Entitiess.Source", "Source")
                         .WithMany()
-                        .HasForeignKey("source");
+                        .HasForeignKey("sourceId");
 
                     b.Navigation("Category");
 
@@ -284,11 +284,11 @@ namespace Web.Storage.Migrations
                 {
                     b.HasOne("Web.Storage.Entitiess.Country", "Country")
                         .WithMany()
-                        .HasForeignKey("country");
+                        .HasForeignKey("countryId");
 
                     b.HasOne("Web.Storage.Entitiess.Publisher", "Publisher")
                         .WithMany()
-                        .HasForeignKey("publisher");
+                        .HasForeignKey("publisherId");
 
                     b.Navigation("Country");
 
@@ -299,7 +299,7 @@ namespace Web.Storage.Migrations
                 {
                     b.HasOne("Web.Storage.Entitiess.Country", "Country")
                         .WithMany()
-                        .HasForeignKey("country");
+                        .HasForeignKey("countryId");
 
                     b.Navigation("Country");
                 });

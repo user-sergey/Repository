@@ -85,14 +85,14 @@ namespace Web.Storage.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     LastName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    country = table.Column<int>(type: "int", nullable: true)
+                    countryId = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Users", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Users_Countries_country",
-                        column: x => x.country,
+                        name: "FK_Users_Countries_countryId",
+                        column: x => x.countryId,
                         principalTable: "Countries",
                         principalColumn: "Id");
                 });
@@ -103,20 +103,20 @@ namespace Web.Storage.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    publisher = table.Column<int>(type: "int", nullable: true),
-                    country = table.Column<int>(type: "int", nullable: true)
+                    publisherId = table.Column<int>(type: "int", nullable: true),
+                    countryId = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_PublisherCountries", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_PublisherCountries_Countries_country",
-                        column: x => x.country,
+                        name: "FK_PublisherCountries_Countries_countryId",
+                        column: x => x.countryId,
                         principalTable: "Countries",
                         principalColumn: "Id");
                     table.ForeignKey(
-                        name: "FK_PublisherCountries_Publishers_publisher",
-                        column: x => x.publisher,
+                        name: "FK_PublisherCountries_Publishers_publisherId",
+                        column: x => x.publisherId,
                         principalTable: "Publishers",
                         principalColumn: "Id");
                 });
@@ -128,32 +128,32 @@ namespace Web.Storage.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    category = table.Column<int>(type: "int", nullable: true),
-                    country = table.Column<int>(type: "int", nullable: true),
-                    publisher = table.Column<int>(type: "int", nullable: true),
-                    source = table.Column<int>(type: "int", nullable: true)
+                    categoryId = table.Column<int>(type: "int", nullable: true),
+                    countryId = table.Column<int>(type: "int", nullable: true),
+                    publisherId = table.Column<int>(type: "int", nullable: true),
+                    sourceId = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_News", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_News_Categories_category",
-                        column: x => x.category,
+                        name: "FK_News_Categories_categoryId",
+                        column: x => x.categoryId,
                         principalTable: "Categories",
                         principalColumn: "Id");
                     table.ForeignKey(
-                        name: "FK_News_Countries_country",
-                        column: x => x.country,
+                        name: "FK_News_Countries_countryId",
+                        column: x => x.countryId,
                         principalTable: "Countries",
                         principalColumn: "Id");
                     table.ForeignKey(
-                        name: "FK_News_Publishers_publisher",
-                        column: x => x.publisher,
+                        name: "FK_News_Publishers_publisherId",
+                        column: x => x.publisherId,
                         principalTable: "Publishers",
                         principalColumn: "Id");
                     table.ForeignKey(
-                        name: "FK_News_Sources_source",
-                        column: x => x.source,
+                        name: "FK_News_Sources_sourceId",
+                        column: x => x.sourceId,
                         principalTable: "Sources",
                         principalColumn: "Id");
                 });
@@ -165,68 +165,68 @@ namespace Web.Storage.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Content = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    user = table.Column<int>(type: "int", nullable: true),
-                    news = table.Column<int>(type: "int", nullable: true)
+                    userId = table.Column<int>(type: "int", nullable: true),
+                    newsId = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Commentaries", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Commentaries_News_news",
-                        column: x => x.news,
+                        name: "FK_Commentaries_News_newsId",
+                        column: x => x.newsId,
                         principalTable: "News",
                         principalColumn: "Id");
                     table.ForeignKey(
-                        name: "FK_Commentaries_Users_user",
-                        column: x => x.user,
+                        name: "FK_Commentaries_Users_userId",
+                        column: x => x.userId,
                         principalTable: "Users",
                         principalColumn: "Id");
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Commentaries_news",
+                name: "IX_Commentaries_newsId",
                 table: "Commentaries",
-                column: "news");
+                column: "newsId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Commentaries_user",
+                name: "IX_Commentaries_userId",
                 table: "Commentaries",
-                column: "user");
+                column: "userId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_News_category",
+                name: "IX_News_categoryId",
                 table: "News",
-                column: "category");
+                column: "categoryId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_News_country",
+                name: "IX_News_countryId",
                 table: "News",
-                column: "country");
+                column: "countryId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_News_publisher",
+                name: "IX_News_publisherId",
                 table: "News",
-                column: "publisher");
+                column: "publisherId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_News_source",
+                name: "IX_News_sourceId",
                 table: "News",
-                column: "source");
+                column: "sourceId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_PublisherCountries_country",
+                name: "IX_PublisherCountries_countryId",
                 table: "PublisherCountries",
-                column: "country");
+                column: "countryId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_PublisherCountries_publisher",
+                name: "IX_PublisherCountries_publisherId",
                 table: "PublisherCountries",
-                column: "publisher");
+                column: "publisherId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Users_country",
+                name: "IX_Users_countryId",
                 table: "Users",
-                column: "country");
+                column: "countryId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

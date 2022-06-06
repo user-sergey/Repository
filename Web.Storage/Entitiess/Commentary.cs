@@ -6,13 +6,13 @@
         public int Id { get; set; }
         [Required]
         public string Content { get; set; }
-        public int? user { get; set; }
-        public int? news { get; set; }
+        public int? userId { get; set; }
+        public int? newsId { get; set; }
 
-        [ForeignKey(nameof(user))]
+        [ForeignKey(nameof(userId))]
         public virtual User? User { get; set; }
 
-        [ForeignKey(nameof(news))]
+        [ForeignKey(nameof(newsId))]
         public virtual News? News { get; set; }
     }
 }

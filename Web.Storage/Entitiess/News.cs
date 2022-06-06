@@ -6,21 +6,21 @@
         public int Id { get; set; }
         [Required]
         public string Name { get; set; }
-        public int? category { get; set; }
-        public int? country { get; set; }
-        public int? publisher { get; set; }
-        public int? source { get; set; }
+        public int? categoryId { get; set; }
+        public int? countryId { get; set; }
+        public int? publisherId { get; set; }
+        public int? sourceId { get; set; }
 
-        [ForeignKey(nameof(category))]
+        [ForeignKey(nameof(categoryId))]
         public virtual Category? Category { get; set; }
 
-        [ForeignKey(nameof(country))]
+        [ForeignKey(nameof(countryId))]
         public virtual Country? Country { get; set; }
 
-        [ForeignKey(nameof(publisher))]
+        [ForeignKey(nameof(publisherId))]
         public virtual Publisher? Publisher { get; set; }
 
-        [ForeignKey(nameof(source))]
+        [ForeignKey(nameof(sourceId))]
         public virtual Source? Source { get; set; }
     }
 }

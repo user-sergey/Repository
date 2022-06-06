@@ -620,6 +620,19 @@
           }
         }
       },
+      "Web.Logic/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Web.Storage": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Web.Logic.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Web.Logic.dll": {}
+        }
+      },
       "Web.Storage/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -1830,6 +1843,11 @@
         "version.txt"
       ]
     },
+    "Web.Logic/1.0.0": {
+      "type": "project",
+      "path": "../Web.Logic/Web.Logic.csproj",
+      "msbuildProject": "../Web.Logic/Web.Logic.csproj"
+    },
     "Web.Storage/1.0.0": {
       "type": "project",
       "path": "../Web.Storage/Web.Storage.csproj",
@@ -1839,6 +1857,7 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "Microsoft.EntityFrameworkCore.Design >= 6.0.5",
+      "Web.Logic >= 1.0.0",
       "Web.Storage >= 1.0.0"
     ]
   },
@@ -1869,6 +1888,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "C:\\Users\\Александр\\Desktop\\Repository\\Web.Logic\\Web.Logic.csproj": {
+              "projectPath": "C:\\Users\\Александр\\Desktop\\Repository\\Web.Logic\\Web.Logic.csproj"
+            },
             "C:\\Users\\Александр\\Desktop\\Repository\\Web.Storage\\Web.Storage.csproj": {
               "projectPath": "C:\\Users\\Александр\\Desktop\\Repository\\Web.Storage\\Web.Storage.csproj"
             }

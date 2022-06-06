@@ -4,6 +4,6 @@
     {
         Task<IList<Category>> GetAll();
         Task Create(string name);
-        Task Delete(string id);
+        Task Delete(int id);
     }
 }

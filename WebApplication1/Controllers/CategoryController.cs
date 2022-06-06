@@ -1,41 +1,28 @@
-﻿//using Microsoft.AspNetCore.Mvc;
-//using Web.Storage.Data;
+﻿using Microsoft.AspNetCore.Mvc;
+using Web.Logic.Categories;
+using Web.Storage.Data;
 
-//namespace Web.Controllers
-//{
-//    public class CategoryController : Controller
-//    {
-//        private readonly AppDbContext _db;
+namespace Web.Controllers
+{
+    public class CategoryController : Controller
+    {
+        private ICategoryManager _manager;
 
-//        public CategoryController(AppDbContext db)
-//        {
-//            _db = db;
-//        }
+        public CategoryController(ICategoryManager manager)
+        {
+            _manager = manager;
+        }
 
-//        public IActionResult Index()
-//        {
-//            IEnumerable<Category> objCategoryList = _db.Categories;
-//            return View(objCategoryList);
-//        }
-
-//        //Get
-//        public IActionResult Create()
-//        {
-//            return View();
-//        }
-
-//        //Post
-//        [HttpPost]
-//        [ValidateAntiForgeryToken]
-//        public IActionResult Create(Category obj)
-//        {
-//            if (ModelState.IsValid)
-//            {
-//                _db.Categories.Add(obj);
-//                _db.SaveChanges();
-//                return RedirectToAction("Index");
-//            }
-//            return View(obj);
-//        }
-//    }
-//}
+        public IActionResult Index()
+        {
+            var categories = _manager.GetAll;
+            return View(categories);
+        }
+        [HttpPost]
+        public IActionResult DeleteCategory(int categoryId) 
+        {
+            _manager.Delete(categoryId);
+            return RedirectToAction("Index");
+        }
+    }
+}

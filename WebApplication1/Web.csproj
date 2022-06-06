@@ -14,6 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Web.Logic\Web.Logic.csproj" />
     <ProjectReference Include="..\Web.Storage\Web.Storage.csproj" />
   </ItemGroup>
 

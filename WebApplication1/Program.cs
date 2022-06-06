@@ -1,10 +1,13 @@
 using Microsoft.EntityFrameworkCore;
+using Web.Logic.Categories;
 using Web.Storage.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddScoped<ICategoryManager, CategoryManager>(); // Зависимость. CategoryManager связан
+                                                                    // с ICategoryManager интерфейсом
 // Add Database Context
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 

@@ -7,6 +7,7 @@ namespace Web.Storage.Data
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
+
         }
 
         public DbSet<Admin> Admins { get; set; }

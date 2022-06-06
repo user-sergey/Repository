@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Web.Logic.Users
+﻿namespace Web.Logic.Users
 {
     internal class IUserManager
     {

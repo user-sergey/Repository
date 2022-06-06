@@ -87,3 +87,5 @@ C:\Users\Александр\Desktop\Repository\WebApplication1\obj\Debug\net6.0\
 C:\Users\Александр\Desktop\Repository\WebApplication1\obj\Debug\net6.0\Web.pdb
 C:\Users\Александр\Desktop\Repository\WebApplication1\obj\Debug\net6.0\Web.genruntimeconfig.cache
 C:\Users\Александр\Desktop\Repository\WebApplication1\obj\Debug\net6.0\ref\Web.dll
+C:\Users\Александр\Desktop\Repository\WebApplication1\bin\Debug\net6.0\Web.Logic.dll
+C:\Users\Александр\Desktop\Repository\WebApplication1\bin\Debug\net6.0\Web.Logic.pdb

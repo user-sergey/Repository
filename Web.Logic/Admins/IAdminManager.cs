@@ -1,6 +1,9 @@
-﻿namespace Web.Logic.Admins
+namespace Web.Logic.Admins
 {
-    internal class IAdminManager
+    public interface IAdminManager
     {
+        Task<IList<Admin>> GetAll();
+        Task Create(string name, string lastname);
+        Task Delete(int id);
     }
 }

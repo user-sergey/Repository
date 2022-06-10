@@ -1,6 +1,9 @@
-﻿namespace Web.Logic.Countries
+namespace Web.Logic.Countries
 {
-    internal class ICountryManager
+    public interface ICountryManager
     {
+        Task<IList<Country>> GetAll();
+        Task Create(string name);
+        Task Delete(int id);
     }
 }

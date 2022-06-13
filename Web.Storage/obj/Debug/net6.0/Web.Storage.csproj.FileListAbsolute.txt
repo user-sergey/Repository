@@ -12,3 +12,17 @@ C:\Users\Александр\Desktop\Repository\Web.Storage\obj\Debug\net6.0\refi
 C:\Users\Александр\Desktop\Repository\Web.Storage\obj\Debug\net6.0\Web.Storage.pdb
 C:\Users\Александр\Desktop\Repository\Web.Storage\obj\Debug\net6.0\Web.Storage.genruntimeconfig.cache
 C:\Users\Александр\Desktop\Repository\Web.Storage\obj\Debug\net6.0\ref\Web.Storage.dll
+C:\Users\Denis Fomichev\Desktop\Repository\Web.Storage\bin\Debug\net6.0\Web.Storage.deps.json
+C:\Users\Denis Fomichev\Desktop\Repository\Web.Storage\bin\Debug\net6.0\Web.Storage.runtimeconfig.json
+C:\Users\Denis Fomichev\Desktop\Repository\Web.Storage\bin\Debug\net6.0\Web.Storage.dll
+C:\Users\Denis Fomichev\Desktop\Repository\Web.Storage\bin\Debug\net6.0\Web.Storage.pdb
+C:\Users\Denis Fomichev\Desktop\Repository\Web.Storage\obj\Debug\net6.0\Web.Storage.csproj.AssemblyReference.cache
+C:\Users\Denis Fomichev\Desktop\Repository\Web.Storage\obj\Debug\net6.0\Web.Storage.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Denis Fomichev\Desktop\Repository\Web.Storage\obj\Debug\net6.0\Web.Storage.AssemblyInfoInputs.cache
+C:\Users\Denis Fomichev\Desktop\Repository\Web.Storage\obj\Debug\net6.0\Web.Storage.AssemblyInfo.cs
+C:\Users\Denis Fomichev\Desktop\Repository\Web.Storage\obj\Debug\net6.0\Web.Storage.csproj.CoreCompileInputs.cache
+C:\Users\Denis Fomichev\Desktop\Repository\Web.Storage\obj\Debug\net6.0\Web.Storage.dll
+C:\Users\Denis Fomichev\Desktop\Repository\Web.Storage\obj\Debug\net6.0\refint\Web.Storage.dll
+C:\Users\Denis Fomichev\Desktop\Repository\Web.Storage\obj\Debug\net6.0\Web.Storage.pdb
+C:\Users\Denis Fomichev\Desktop\Repository\Web.Storage\obj\Debug\net6.0\Web.Storage.genruntimeconfig.cache
+C:\Users\Denis Fomichev\Desktop\Repository\Web.Storage\obj\Debug\net6.0\ref\Web.Storage.dll

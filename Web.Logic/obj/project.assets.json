@@ -1786,19 +1786,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Александр\\.nuget\\packages\\": {}
+    "C:\\Users\\Denis Fomichev\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Александр\\Desktop\\Repository\\Web.Logic\\Web.Logic.csproj",
+      "projectUniqueName": "C:\\Users\\Denis Fomichev\\Desktop\\Repository\\Web.Logic\\Web.Logic.csproj",
       "projectName": "Web.Logic",
-      "projectPath": "C:\\Users\\Александр\\Desktop\\Repository\\Web.Logic\\Web.Logic.csproj",
-      "packagesPath": "C:\\Users\\Александр\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Александр\\Desktop\\Repository\\Web.Logic\\obj\\",
+      "projectPath": "C:\\Users\\Denis Fomichev\\Desktop\\Repository\\Web.Logic\\Web.Logic.csproj",
+      "packagesPath": "C:\\Users\\Denis Fomichev\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Denis Fomichev\\Desktop\\Repository\\Web.Logic\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Александр\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Denis Fomichev\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1812,8 +1812,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Александр\\Desktop\\Repository\\Web.Storage\\Web.Storage.csproj": {
-              "projectPath": "C:\\Users\\Александр\\Desktop\\Repository\\Web.Storage\\Web.Storage.csproj"
+            "C:\\Users\\Denis Fomichev\\Desktop\\Repository\\Web.Storage\\Web.Storage.csproj": {
+              "projectPath": "C:\\Users\\Denis Fomichev\\Desktop\\Repository\\Web.Storage\\Web.Storage.csproj"
             }
           }
         }
@@ -1842,7 +1842,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,6 +1,6 @@
 ﻿namespace Web.Logic.Publishers
 {
-    internal class IPublisherManager
+    public class IPublisherManager
     {
     }
 }

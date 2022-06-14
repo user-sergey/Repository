@@ -11,7 +11,7 @@ namespace Web.Logic.NewsNamespace
         {
             _context = context;
         }
-        public async Task Create(string? name, int? categoryid, int? countryid, int? publisherid, int? sourceid)
+        public async Task Create(string? name, string? content, int? categoryid, int? countryid, int? publisherid, int? sourceid)
         {
             var news = new News { Name = name, categoryId = categoryid, countryId = countryid, publisherId = publisherid, sourceId = sourceid};
             _context.NewsNamespace.Add(news);

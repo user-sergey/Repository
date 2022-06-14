@@ -1,13 +1,17 @@
 using Microsoft.EntityFrameworkCore;
 using Web.Logic.Categories;
+using Web.Logic.Countries;
+using Web.Logic.NewsNamespace;
 using Web.Storage.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddScoped<ICategoryManager, CategoryManager>(); // Зависимость. CategoryManager связан
-                                                                    // с ICategoryManager интерфейсом
+builder.Services.AddScoped<ICategoryManager, CategoryManager>(); // Р—Р°РІРёСЃРёРјРѕСЃС‚СЊ. CategoryManager СЃРІСЏР·Р°РЅ
+                                                                 // СЃ ICategoryManager РёРЅС‚РµСЂС„РµР№СЃРѕРј
+builder.Services.AddScoped<ICountryManager, CountryManager>();
+builder.Services.AddScoped<INewsManager, NewsManager>();
 // Add Database Context
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 

@@ -1,0 +1,44 @@
+﻿@model IList<Web.Storage.Entitiess.Country>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="container p-3"> 
+    <div class="row pt-4"> 
+        <div class="col-6">
+            <h2 class="text-outline-primary">Country List</h2>
+        </div>
+        <div class="col-6 text-end">
+            <a asp-controller="Country" asp-action="Create" class="btn btn-outline-primary">
+                <i class="bi bi-plus-circle-fill"></i> &nbsp; Create new country
+                
+            </a>
+        </div>
+    </div>
+    <br /><br />
+<table class="table table-bordered table-dark table-striped" style="width:100%">
+    <thead>
+        <tr>
+            <th>
+                Id
+            </th>
+            <th>
+                Name
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var country in Model)
+        {
+            <tr>
+                <td width="20%">
+                    @country.Id
+                </td>
+                 <td width="10%">
+                    @country.Name
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+</div>

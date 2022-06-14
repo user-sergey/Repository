@@ -26,7 +26,7 @@ namespace Web.Controllers
 
         [HttpPut]
         [Route("newsnamespace")]
-        public Task Create([FromBody] CreateNewsRequest request) => _manager.Create(request.Name, request.categoryId, request.countryId, request.publisherId, request.sourceId);
+        public Task Create([FromBody] CreateNewsRequest request) => _manager.Create(request.Name, request.Content, request.categoryId, request.countryId, request.publisherId, request.sourceId);
 
         [HttpDelete]
         [Route("newsnamespace/{id}")]

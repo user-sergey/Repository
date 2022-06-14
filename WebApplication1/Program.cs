@@ -2,6 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using Web.Logic.Categories;
 using Web.Logic.Countries;
 using Web.Logic.NewsNamespace;
+using Web.Logic.Commentaries;
 using Web.Storage.Data;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -12,6 +13,7 @@ builder.Services.AddScoped<ICategoryManager, CategoryManager>(); // Зависи
                                                                  // с ICategoryManager интерфейсом
 builder.Services.AddScoped<ICountryManager, CountryManager>();
 builder.Services.AddScoped<INewsManager, NewsManager>();
+builder.Services.AddScoped<ICommentaryManager, CommentaryManager>();
 // Add Database Context
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 

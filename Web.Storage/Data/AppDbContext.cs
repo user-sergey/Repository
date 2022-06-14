@@ -14,7 +14,7 @@ namespace Web.Storage.Data
         public DbSet<Category> Categories { get; set; }
         public DbSet<Commentary> Commentaries { get; set; }
         public DbSet<Country> Countries { get; set; }
-        public DbSet<News> News { get; set; }
+        public DbSet<News> NewsNamespace { get; set; }
         public DbSet<Publisher> Publishers { get; set; }
         public DbSet<PublisherCountry> PublisherCountries { get; set; } 
         public DbSet<Source> Sources { get; set; }

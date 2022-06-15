@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Александр\\Desktop\\Repository\\Web.Storage\\Web.Storage.csproj": {}
+    "C:\\Users\\fslsv\\Desktop\\Repository\\Web.Storage\\Web.Storage.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Александр\\Desktop\\Repository\\Web.Storage\\Web.Storage.csproj": {
+    "C:\\Users\\fslsv\\Desktop\\Repository\\Web.Storage\\Web.Storage.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Александр\\Desktop\\Repository\\Web.Storage\\Web.Storage.csproj",
+        "projectUniqueName": "C:\\Users\\fslsv\\Desktop\\Repository\\Web.Storage\\Web.Storage.csproj",
         "projectName": "Web.Storage",
-        "projectPath": "C:\\Users\\Александр\\Desktop\\Repository\\Web.Storage\\Web.Storage.csproj",
-        "packagesPath": "C:\\Users\\Александр\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Александр\\Desktop\\Repository\\Web.Storage\\obj\\",
+        "projectPath": "C:\\Users\\fslsv\\Desktop\\Repository\\Web.Storage\\Web.Storage.csproj",
+        "packagesPath": "C:\\Users\\fslsv\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\fslsv\\Desktop\\Repository\\Web.Storage\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Александр\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\fslsv\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

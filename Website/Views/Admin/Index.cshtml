@@ -1,0 +1,50 @@
+﻿@model IList<Web.Entities.Admin>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="container p-3"> 
+    <div class="row pt-4"> 
+        <div class="col-6">
+            <h2 class="text-outline-primary">Admin List</h2>
+        </div>
+        <div class="col-6 text-end">
+            <a asp-controller="Admin" asp-action="Create" class="btn btn-outline-primary">
+                <i class="bi bi-plus-circle-fill"></i> &nbsp; Create new admin
+                
+            </a>
+        </div>
+    </div>
+    <br /><br />
+<table class="table table-bordered table-dark table-striped" style="width:100%">
+    <thead>
+        <tr>
+            <th>
+                Id
+            </th>
+            <th>
+                Name
+            </th>
+            <th>
+                LastName
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var admin in Model)
+        {
+            <tr>
+                <td width="20%">
+                    @admin.Id
+                </td>
+                 <td width="10%">
+                    @admin.Name
+                </td>
+                 <td width="10%">
+                    @admin.LastName
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+</div>

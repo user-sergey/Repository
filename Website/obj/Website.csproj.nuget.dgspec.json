@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\fslsv\\source\\repos\\Website\\Website\\Website.csproj": {}
+    "C:\\Users\\fslsv\\Desktop\\Repository\\Website\\Website.csproj": {}
   },
   "projects": {
-    "C:\\Users\\fslsv\\source\\repos\\Website\\Website\\Website.csproj": {
+    "C:\\Users\\fslsv\\Desktop\\Repository\\Website\\Website.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\fslsv\\source\\repos\\Website\\Website\\Website.csproj",
+        "projectUniqueName": "C:\\Users\\fslsv\\Desktop\\Repository\\Website\\Website.csproj",
         "projectName": "Website",
-        "projectPath": "C:\\Users\\fslsv\\source\\repos\\Website\\Website\\Website.csproj",
+        "projectPath": "C:\\Users\\fslsv\\Desktop\\Repository\\Website\\Website.csproj",
         "packagesPath": "C:\\Users\\fslsv\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\fslsv\\source\\repos\\Website\\Website\\obj\\",
+        "outputPath": "C:\\Users\\fslsv\\Desktop\\Repository\\Website\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\fslsv\\AppData\\Roaming\\NuGet\\NuGet.Config",

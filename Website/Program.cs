@@ -4,6 +4,7 @@ using Web.Logic.Categories;
 using Web.Logic.Countries;
 using Web.Logic.NewsNamespace;
 using Web.Logic.Commentaries;
+using Web.Logic.Admins;
 using Website.Data;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -22,6 +23,7 @@ builder.Services.AddScoped<ICategoryManager, CategoryManager>(); // Зависимость.
 builder.Services.AddScoped<ICountryManager, CountryManager>();
 builder.Services.AddScoped<INewsManager, NewsManager>();
 builder.Services.AddScoped<ICommentaryManager, CommentaryManager>();
+builder.Services.AddScoped<IAdminManager, AdminManager>();
 
 var app = builder.Build();
 

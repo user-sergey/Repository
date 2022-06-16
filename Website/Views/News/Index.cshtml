@@ -1,0 +1,74 @@
+@model IList<Web.Entities.News>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="container p-3"> 
+    <div class="row pt-4"> 
+        <div class="col-6">
+            <h2 class="text-outline-primary">News List</h2>
+        </div>
+        <div class="col-6 text-end">
+            <a asp-controller="News" asp-action="Create" class="btn btn-outline-primary">
+                <i class="bi bi-plus-circle-fill"></i> &nbsp; Create new news
+                
+            </a>
+        </div>
+    </div>
+    <br /><br />
+<table class="table table-bordered table-dark table-striped" style="width:100%">
+    <thead>
+        <tr>
+            <th>
+                Id
+            </th>
+            <th>
+                Name
+            </th>
+            <th>
+                Content
+            </th>
+            <th>
+                categoryId
+            </th>
+            <th>
+                countryId
+            </th>
+            <th>
+                publisherId
+            </th>
+            <th>
+                sourceId
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var news in Model)
+        {
+            <tr>
+                <td width="20%">
+                    @news.Id
+                </td>
+                 <td width="10%">
+                    @news.Name
+                </td>
+                 <td width="10%">
+                    @news.Content
+                </td>
+                 <td width="10%">
+                    @news.categoryId
+                </td>
+                 <td width="10%">
+                    @news.countryId
+                </td>
+                 <td width="10%">
+                    @news.publisherId
+                </td>
+                 <td width="10%">
+                    @news.sourceId
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+</div>
